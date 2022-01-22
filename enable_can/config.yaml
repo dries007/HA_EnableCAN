@@ -1,7 +1,7 @@
 name: "Enable CAN"
 description: "Enable the use of CAN in Home Assistant core."
 url: "https://github.com/dries007/HA_EnableCAN"
-version: "0.0.1"
+version: "1.0.0"
 slug: can_bus
 arch:
   - aarch64
