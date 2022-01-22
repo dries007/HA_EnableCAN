@@ -1,0 +1,21 @@
+name: "Enable CAN"
+description: "Enable the use of CAN in Home Assistant core."
+url: "https://github.com/dries007/HA_EnableCAN"
+version: "0.0.1"
+slug: can_bus
+arch:
+  - aarch64
+  - amd64
+  - armhf
+  - armv7
+  - i386
+startup: services
+host_network: true
+privileged:
+  - NET_ADMIN
+options:
+  device: "can0"
+  bitrate: 125000
+schema:
+  device: str
+  bitrate: int(10000,1000000)
